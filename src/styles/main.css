@@ -6,7 +6,7 @@
     margin-top: 1.25em;
     margin-bottom: 0.6em;
   }
-  .prose > :is(h1,h2,h3,h4):first-child { margin-top: 1.5; }
+  .prose > :is(h1,h2,h3,h4):first-child { margin-top: 2; }
   .prose > :is(h1,h2,h3,h4) + :is(h1,h2,h3,h4) { margin-top: 0.5em; }
 
   /* 段落やリスト等の下マージンだけ残す（.prose 直下のみ） */
@@ -126,6 +126,22 @@
     .btn-regular-dark.success {
         @apply bg-[oklch(0.75_0.14_var(--hue))] dark:bg-[oklch(0.75_0.14_var(--hue))]
     }
+}
+
+@layer components {
+  /* 見出しの上下をそろえる（.prose 直下のみ） */
+  .prose > :is(h1,h2,h3,h4){
+    margin-top: 1.25em;
+    margin-bottom: 0.6em;
+  }
+  .prose > :is(h1,h2,h3,h4):first-child { margin-top: 1.5; }
+  .prose > :is(h1,h2,h3,h4) + :is(h1,h2,h3,h4) { margin-top: 0.5em; }
+
+  /* 段落やリスト等の下マージンだけ残す（.prose 直下のみ） */
+  .prose > :is(p,ul,ol,blockquote,pre,table){
+    margin-top: 0;
+    margin-bottom: 1.1em;
+  }
 }
 
 .custom-md img, #post-cover img {
