@@ -64,11 +64,11 @@ export const profileConfig: ProfileConfig = {
 			// `pnpm add @iconify-json/<icon-set-name>`
 			url: "https://x.com/at_full_speed_",
 		},
-		{
-			name: "pixiv",
-			icon: "simple-icons:pixiv",
-			url: "https://www.pixiv.net/users/114262172",
-		},
+		//{
+		//	name: "pixiv",
+		//	icon: "simple-icons:pixiv",
+		//	url: "https://www.pixiv.net/users/114262172",
+		//},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
