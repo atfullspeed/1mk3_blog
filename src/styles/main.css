@@ -16,6 +16,111 @@
   }
 }
 
+/* ===== カラートークン（ライト/ダーク） ===== */
+:root{
+  /* ベース（本文） */
+  --bubble-fg: #111827;            /* gray-900 */
+  --bubble-bg: #ffffff;            /* 白 背景 */
+  --bubble-shadow: 0 1px 2px rgb(0 0 0 / 0.06);
+
+  /* 枠色（デフォルト） */
+  --bubble-accent: #9ca3af;        /* gray-400 */
+
+  /* バリエーション */
+  --bubble-accent-magenta: #db2777; /* fuchsia-600 */
+  --bubble-accent-blue:    #2563eb; /* blue-600 */
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bubble-fg: #e5e7eb;          /* gray-200 */
+    --bubble-bg: #0b1220;          /* ほんのり濃い紺黒系（暗背景用） */
+    --bubble-shadow: 0 1px 2px rgb(0 0 0 / 0.35);
+    --bubble-accent: #6b7280;      /* gray-500 */
+  }
+}
+
+/* ===== 吹き出しレイアウト（.prose 内だけ有効） ===== */
+@layer components{
+  /* 1) 行コンテナ：アバター + 吹き出し */
+  .prose .chat{
+    display: grid;
+    grid-template-columns: auto minmax(0,1fr);
+    align-items: end;
+    column-gap: 0.75rem;
+    margin-block: 1rem;
+  }
+  /* 右側配置（列入れ替え） */
+  .prose .chat-right{
+    grid-template-columns: minmax(0,1fr) auto;
+  }
+
+  /* 2) アバター（でかい立ち絵を想定） */
+  .prose .chat-avatar{
+    /* 横幅は可変。モバイルで大きめ、狭い時は自動で縮む */
+    inline-size: clamp(72px, 18vw, 120px);
+    block-size: auto;
+    object-fit: contain;          /* 全身立ち絵を潰さない */
+    border-radius: 0.5rem;        /* 角丸中 */
+    border: 1px solid color-mix(in oklab, var(--bubble-fg) 15%, transparent);
+    background: color-mix(in oklab, var(--bubble-fg) 6%, transparent);
+  }
+
+  /* 3) 吹き出し本体 */
+  .prose .bubble{
+    position: relative;
+    justify-self: start;          /* 左用の既定 */
+    max-inline-size: min(72%, 58ch);  /* 長過ぎ防止。文章幅は58ch程度 */
+    background: var(--bubble-bg);
+    color: var(--bubble-fg);
+    border: 2px solid var(--bubble-accent);
+    border-radius: 0.75rem;       /* 角丸＝中くらい。四角感は残す */
+    box-shadow: var(--bubble-shadow);
+    padding: 0.75rem 1rem;
+    display: block;
+    overflow-wrap: anywhere;
+    display: flow-root;           /* 内部マージン潰れ対策 */
+    font-size: 1.125rem;          /* 字大きめ */
+    line-height: 1.75;            /* 読みやすく */
+  }
+  .prose .chat-right .bubble{ justify-self: end; }
+
+  /* 4) 尻尾（左/右）二重三角で縁取り */
+  .prose .bubble-left::before,
+  .prose .bubble-left::after,
+  .prose .bubble-right::before,
+  .prose .bubble-right::after{
+    content: "";
+    position: absolute;
+    inline-size: 0; block-size: 0;
+    border-style: solid;
+  }
+  /* 左尻尾 */
+  .prose .bubble-left::before{
+    left: -12px; top: 18px;
+    border-width: 10px 12px 10px 0;
+    border-color: transparent var(--bubble-accent) transparent transparent;
+  }
+  .prose .bubble-left::after{
+    left: -10px; top: 18px;
+    border-width: 10px 12px 10px 0;
+    border-color: transparent var(--bubble-bg) transparent transparent;
+  }
+  /* 右尻尾 */
+  .prose .bubble-right::before{
+    right: -12px; top: 18px;
+    border-width: 10px 0 10px 12px;
+    border-color: transparent transparent transparent var(--bubble-accent);
+  }
+  .prose .bubble-right::after{
+    right: -10px; top: 18px;
+    border-width: 10px 0 10px 12px;
+    border-color: transparent transparent transparent var(--bubble-bg);
+  }
+
+  /* 5) 吹き出し色バリエーション */
+  .prose .bubble-magenta{ --bubble-accent: var(--bubble-accent-magenta); }
+}
+
 @layer components {
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;

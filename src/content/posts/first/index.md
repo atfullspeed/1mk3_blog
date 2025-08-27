@@ -63,17 +63,24 @@ print("コピーボタンあるとか最高すぎる")
 すごいですねコレ
 :::
 
-<div class="speech left yura">
-  <img class="avatar" src="/favicon/icon" alt="アイコン" loading="lazy" decoding="async">
-  <div class="bubble">
-    吹き出しを作りました  
-    改行できるかなコレ
+<!-- 左側・マゼンタ枠・でかい立ち絵＋2行改行 -->
+<div class="chat">
+  <div class="bubble bubble-left bubble-magenta">
+    <div class="bubble-body">
+はじめまして。これは左側の吹き出しだ。
+2行改行のテスト。
+
+ここが空行になる。テキストは長くても自動で折り返す。
+    </div>
   </div>
 </div>
 
-<div class="speech right sie">
-  <img class="avatar" src="/favicon/icon" alt="アイコン" loading="lazy" decoding="async">
-  <div class="bubble">
-    いい感じに出来てるといいのですが
+<!-- 右側・青枠 -->
+<div class="chat chat-right">
+  <div class="bubble bubble-right bubble-blue">
+    <div class="bubble-body">
+右側の返答。色は青。文字は大きめで、読みやすい行間。
+画像やコードも入れられる。
+    </div>
   </div>
 </div>
