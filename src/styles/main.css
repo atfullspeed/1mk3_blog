@@ -118,6 +118,20 @@
   .prose :is(p,ul,ol,blockquote,pre,table){
     margin-top:0; margin-bottom:1.1em;
   }
+  @layer components {
+  /* 1) 見出しの直後に来る“既知以外のブロック”に最小の上マージンを与える */
+  .prose :is(h1,h2,h3,h4)
+    + :where(:not(h1,h2,h3,h4,p,ul,ol,pre,blockquote,table)) {
+    margin-top: 0.6em;   /* 0.5〜0.75em 好みで */
+  }
+
+  /* 2) note/tip/警告系のコールアウト箱に標準の上下マージンを付ける */
+  .prose :where(.note,.info,.tip,.warning,.caution,.important,
+                .admonition,.callout,aside,details[data-callout],details.callout) {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
 }
 }
 
