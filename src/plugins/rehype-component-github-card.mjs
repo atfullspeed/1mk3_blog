@@ -12,7 +12,7 @@ import { h } from "hastscript";
 export function GithubCardComponent(properties, children) {
 	if (Array.isArray(children) && children.length !== 0)
 		return h("div", { class: "hidden" }, [
-			'Invalid directive. ("github" directive must be leaf type "")',
+			'Invalid directive. ("github" directive must be leaf type "::github{repo="owner/repo"}")',
 		]);
 
 	if (!properties.repo || !properties.repo.includes("/"))
