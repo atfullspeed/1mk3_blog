@@ -11,24 +11,6 @@
 }
 
 @layer components {
-  /* コールアウトの箱を広くとって、最初の p がタイトルに食い込まないようにする */
-  .prose :where(.note,.tip,.info,.warning,.caution,.important,.admonition,.callout){
-    @apply relative flow-root rounded-lg border border-gray-200 bg-gray-50 p-4 md:p-5;
-  }
-  /* タイトル帯を重ねているテーマ向けに、上だけ少し余裕を増やす */
-  .prose :where(.note,.tip,.info,.warning,.caution,.important,.admonition,.callout){
-    padding-top: 1.75rem; /* タイトルが被るなら 2rem まで上げろ */
-  }
-  /* 箱の最初と最後は余白を相殺して詰める。本文がのっぺりしない程度で十分 */
-  .prose :where(.note,.tip,.info,.warning,.caution,.important,.admonition,.callout) > :first-child { margin-top: 0; }
-  .prose :where(.note,.tip,.info,.warning,.caution,.important,.admonition,.callout) > :last-child  { margin-bottom: 0; }
-  /* details/summary で実装されているパターンへの保険 */
-  .prose details:where(.note,.tip,.info,.warning,.caution,.important,.admonition,.callout) > summary{
-    @apply font-semibold mb-2;
-  }
-}
-
-@layer components {
   .prose :where(.note,.tip,.info,.warning,.caution,.important,.admonition,.callout)
     > :where(h1,h2,h3,h4) + :where(p,ul,ol,pre,blockquote,table){
     margin-top: .25rem;  /* 効き過ぎ注意。0.25〜0.5remで調整 */
