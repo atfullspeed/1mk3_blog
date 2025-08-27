@@ -19,7 +19,7 @@ jobs:
       - name: Install, build, and upload
         uses: withastro/action@v3
         # ロックファイルがあるので package-manager の指定は不要
-        # （なければここで package-manager を明示しろ）
+        # （なければここで package-manager を明示）
 
   deploy:
     needs: build
