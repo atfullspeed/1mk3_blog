@@ -118,20 +118,20 @@
   .prose :is(p,ul,ol,blockquote,pre,table){
     margin-top:0; margin-bottom:1.1em;
   }
-@layer components {
-  /* コールアウト全般の上下マージンを標準化 */
-  .prose blockquote.admonition,
-  .prose blockquote[class*="bdm-"] {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
+    @layer components {
+    /* コールアウト全般の上下マージンを標準化 */
+    .prose blockquote.admonition,
+    .prose blockquote[class*="bdm-"] {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
 
-  /* 見出し直後に来たときだけ上を少し詰める */
-  .prose :is(h1,h2,h3,h4)
-    + :is(blockquote.admonition, blockquote[class*="bdm-"]) {
-    margin-top: 0.6em;
-  }
-}
+    /* 見出し直後に来たときだけ上を少し詰める */
+    .prose :is(h1,h2,h3,h4)
+        + :is(blockquote.admonition, blockquote[class*="bdm-"]) {
+        margin-top: 0.6em;
+    }
+    }
 }
 }
 
