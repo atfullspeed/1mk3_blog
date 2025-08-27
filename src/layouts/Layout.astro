@@ -73,6 +73,7 @@ const bannerOffset =
 
 const fm = Astro.props?.frontmatter ?? {};
 const NOINDEX_SITE = true;
+const NOINDEX = NOINDEX_SITE || fm.noindex === true;
 
 ---
 

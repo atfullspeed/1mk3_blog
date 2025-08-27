@@ -1,4 +1,4 @@
-import sitemap from "@astrojs/sitemap";
+
 import svelte from "@astrojs/svelte";
 import tailwind from "@astrojs/tailwind";
 import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-sections";
@@ -100,7 +100,6 @@ export default defineConfig({
 			}
 		}),
         svelte(),
-		sitemap(),
 	],
 	markdown:{
 		remarkPlugins: [
