@@ -9,11 +9,11 @@ import { h } from "hastscript";
  * @param {import('mdast').RootContent[]} children - The children elements of the component.
  * @returns {import('mdast').Parent} The created GitHub Card component.
  */
-///export function GithubCardComponent(properties, children) {
-	///if (Array.isArray(children) && children.length !== 0)
-		///return h("div", { class: "hidden" }, [
-			///'Invalid directive. ("github" directive must be leaf type "::github{repo="owner/repo"}")',
-		///]);
+export function GithubCardComponent(properties, children) {
+	if (Array.isArray(children) && children.length !== 0)
+		return h("div", { class: "hidden" }, [
+			'Invalid directive. ("github" directive must be leaf type "::github{repo="owner/repo"}")',
+		]);
 
 	if (!properties.repo || !properties.repo.includes("/"))
 		return h(
