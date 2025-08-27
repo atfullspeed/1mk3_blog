@@ -2,7 +2,7 @@
 title: 初投稿記念
 published: 2025-08-26
 description: 名の通りです
-image: "./cover.jpeg"
+image: "./cover.png"
 tags: [告知]
 category: 一目散宅関連
 draft: false
