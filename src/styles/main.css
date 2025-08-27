@@ -1,6 +1,9 @@
 @tailwind components;
 
 @layer components {
+    article > header + * {
+    margin-top: 1.75rem; /* ≒ mt-7。好みで 1.5rem〜2rem */
+  }
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
     }
