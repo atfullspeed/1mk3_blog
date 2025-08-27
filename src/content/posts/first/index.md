@@ -62,3 +62,18 @@ print("コピーボタンあるとか最高すぎる")
 :::note[実はタイトル自由]
 すごいですねコレ
 :::
+
+<div class="speech left yura">
+  <img class="avatar" src="/favicon/icon" alt="アイコン" loading="lazy" decoding="async">
+  <div class="bubble">
+    吹き出しを作りました  
+    改行できるかなコレ
+  </div>
+</div>
+
+<div class="speech right sie">
+  <img class="avatar" src="/favicon/icon" alt="アイコン" loading="lazy" decoding="async">
+  <div class="bubble">
+    いい感じに出来てるといいのですが
+  </div>
+</div>

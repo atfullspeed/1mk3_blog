@@ -1,0 +1,28 @@
+/* tokens.css: 全ページで使う色の定義 */
+:root {
+  /* 基本 */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --text: #1b1f23;
+  --muted: #6a737d;
+  --border: #e1e4e8;
+
+  /* アクセント（お前の吹き出し色もここで管理） */
+  --accent-red: #b34a7d;   /* ユラ */
+  --accent-blue: #3a68c5;  /* シエ */
+
+  /* コード/リンク系 */
+  --code-bg: #f6f8fa;
+  --link: #0969da;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b0f14;
+  --surface: #0f141a;
+  --text: #e6edf3;
+  --muted: #9da7b3;
+  --border: #263241;
+
+  --code-bg: #161b22;
+  --link: #58a6ff;
+}
