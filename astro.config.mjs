@@ -112,9 +112,7 @@ export default defineConfig({
 			remarkSectionize,
 			parseDirectiveNode,
 		],
-		rehypePlugins: [{
-			remarkPlugins: [remarkBreaks],
-		},
+		rehypePlugins: [
 			rehypeKatex,
 			rehypeSlug,
 			[
