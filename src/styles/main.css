@@ -1,13 +1,18 @@
 @tailwind components;
 
 @layer components {
-  /* .prose / .prose-sm / .prose-lg すべてを対象にする */
-  :is(.prose,.prose-sm,.prose-lg) > :is(h1,h2,h3,h4){ margin-top:1.25em; margin-bottom:0.6em; }
-  :is(.prose,.prose-sm,.prose-lg) > :is(h1,h2,h3,h4):first-child{ margin-top:1.7em; }
-  :is(.prose,.prose-sm,.prose-lg) > :is(h1,h2,h3,h4) + :is(h1,h2,h3,h4){ margin-top:0.5em; }
+  /* 見出しの上下をそろえる（.prose 直下のみ） */
+  .prose > :is(h1,h2,h3,h4){
+    margin-top: 1.25em;
+    margin-bottom: 0.6em;
+  }
+  .prose > :is(h1,h2,h3,h4):first-child { margin-top: 2; }
+  .prose > :is(h1,h2,h3,h4) + :is(h1,h2,h3,h4) { margin-top: 0.5em; }
 
-  :is(.prose,.prose-sm,.prose-lg) > :is(p,ul,ol,blockquote,pre,table){
-    margin-top:0; margin-bottom:1.1em;
+  /* 段落やリスト等の下マージンだけ残す（.prose 直下のみ） */
+  .prose > :is(p,ul,ol,blockquote,pre,table){
+    margin-top: 0;
+    margin-bottom: 1.1em;
   }
 }
 

@@ -39,26 +39,16 @@ print("コードが書けるのは超助かりますね")
 print("コピーボタンあるとか最高すぎる")
 ```
 
-:::note
-いい感じの機能が色々ありますね
-:::
-
-:::tip
-活かし方が問われますね
-:::
-
-:::important
-なんか重要そうな表示にもできるし
-:::
-
-:::warning
-気をつけてくれみたいな表示にもできるし
-:::
-
-:::caution
-マジでやめろ気をつけろみたいな表示にもできる！
-:::
-
-:::note[実はタイトル自由]
-すごいですねコレ
-:::
+## 画像だって表示できる
+<figure class="my-6">
+  <img
+    src="./cover.png"
+    alt="メインビジュアル"
+    width="600" height="315"
+    loading="lazy" decoding="async"
+    class="mx-auto rounded-xl"
+  />
+  <figcaption class="text-sm text-muted-foreground mt-2 text-center">
+    コイツが居過ぎて最早しつこいですね
+  </figcaption>
+</figure>
