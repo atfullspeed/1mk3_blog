@@ -102,7 +102,7 @@ export default defineConfig({
         svelte(),
 		sitemap(),
 	],
-	markdown: {
+	markdown:{
 		remarkPlugins: [
 			remarkMath,
 			remarkReadingTime,
