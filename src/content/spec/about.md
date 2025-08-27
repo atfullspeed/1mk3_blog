@@ -1,9 +1,8 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+ここは**小野寺イツサイ**とかいう人間が、なんとなく活動をまとめている雑多活動拠点です。  
 
-::github{repo="saicaca/fuwari"}
-
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+## Profile
+小野寺イツサイ：  
+虹色の丸い猫みたいなアイコンの人。  
+漢字で書くと佚采。絵を描いたり何だりしている。  
+プログラミングにハマり始めたド初心者。  
