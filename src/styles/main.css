@@ -1,13 +1,19 @@
 @tailwind components;
 
 @layer components {
-  /* 見出し・段落のマージン調整（前に教えたやつを貼る） */
-  .prose :is(h1,h2,h3,h4){ margin-top:1.25em; margin-bottom:0.6em; }
-  .prose :is(h1,h2,h3,h4):first-child{ margin-top:2em; }
-  .prose :is(h1,h2,h3,h4) + :is(h1,h2,h3,h4){ margin-top:0.5em; }
-  .prose :is(p,ul,ol,blockquote,pre,table){
-    margin-top:0; margin-bottom:1.1em;
-    }
+  /* 見出しの上下をそろえる（.prose 直下のみ） */
+  .prose > :is(h1,h2,h3,h4){
+    margin-top: 1.25em;
+    margin-bottom: 0.6em;
+  }
+  .prose > :is(h1,h2,h3,h4):first-child { margin-top: 2; }
+  .prose > :is(h1,h2,h3,h4) + :is(h1,h2,h3,h4) { margin-top: 0.5em; }
+
+  /* 段落やリスト等の下マージンだけ残す（.prose 直下のみ） */
+  .prose > :is(p,ul,ol,blockquote,pre,table){
+    margin-top: 0;
+    margin-bottom: 1.1em;
+  }
 }
 
 @layer components {
