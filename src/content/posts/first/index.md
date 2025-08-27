@@ -63,24 +63,22 @@ print("コピーボタンあるとか最高すぎる")
 すごいですねコレ
 :::
 
-<!-- 左側・マゼンタ枠・でかい立ち絵＋2行改行 -->
+<!-- 左：マゼンタ -->
 <div class="chat">
-  <div class="bubble bubble-left bubble-magenta">
+  <div class="bubble bubble-right bubble-magenta">
     <div class="bubble-body">
-はじめまして。これは左側の吹き出しだ。
-2行改行のテスト。
-
-ここが空行になる。テキストは長くても自動で折り返す。
+    マゼンタ
+    吹き出しを作ってみました
     </div>
   </div>
 </div>
 
-<!-- 右側・青枠 -->
+<!-- 右：青（必ず .bubble に bubble-blue を付ける） -->
 <div class="chat chat-right">
-  <div class="bubble bubble-right bubble-blue">
+  <div class="bubble bubble-left bubble-blue">
     <div class="bubble-body">
-右側の返答。色は青。文字は大きめで、読みやすい行間。
-画像やコードも入れられる。
+    ブルー
+    うまく言ってると良いのですが
     </div>
   </div>
 </div>
