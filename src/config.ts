@@ -66,7 +66,7 @@ export const profileConfig: ProfileConfig = {
 		},
 		{
 			name: "pixiv",
-			icon: "simple-icons:pixiv",
+			icon: "fa6-brands:pixiv",
 			url: "https://www.pixiv.net/users/114262172",
 		},
 		{
