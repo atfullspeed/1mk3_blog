@@ -18,43 +18,6 @@
 }
 
 @layer components {
-  /* コールアウト箱の土台。blockquote 既定を無効化して自前レイアウトにする */
-  .prose blockquote.admonition{
-    @apply relative flow-root rounded-lg border p-4 md:p-5 not-italic;
-    margin-left: 0;   /* 引用インデントを消す */
-    margin-right: 0;
-    padding-top: 1.75rem; /* タイトル帯が被るテーマ向けの上余白。足りなければ 2rem 前後に */
-  }
-
-  /* タイトル（ある場合） */
-  .prose blockquote.admonition .admonition-title{
-    @apply font-semibold mb-2;
-  }
-
-  /* 中の段落は “普通の本文” に戻す。色も斜体も引用記号も殺す */
-  .prose blockquote.admonition p{
-    margin: 0 0 .9em 0;
-    color: inherit;          /* Typography の薄色を打ち消す */
-    font-style: normal;      /* 斜体をやめる */
-  }
-  .prose blockquote.admonition p:first-child{ margin-top: 0; }
-  .prose blockquote.admonition p:last-child { margin-bottom: 0; }
-  .prose blockquote.admonition p::before,
-  .prose blockquote.admonition p::after{ content: none; }  /* “ ” を削除 */
-
-  /* 見出しの直後に本文が来る時だけ、ほんの少し間をあける（効き過ぎ注意） */
-  .prose blockquote.admonition > :is(h1,h2,h3,h4) + :is(p,ul,ol,pre,blockquote,table){
-    margin-top: .25rem;
-  }
-
-  /* 種別ごとの色（任意）。背景をほんのり、枠色を合わせる */
-  .prose blockquote.admonition.bdm-note     { @apply border-sky-200     bg-sky-50; }
-  .prose blockquote.admonition.bdm-tip      { @apply border-teal-200    bg-teal-50; }
-  .prose blockquote.admonition.bdm-important{ @apply border-fuchsia-200 bg-fuchsia-50; }
-  .prose blockquote.admonition.bdm-warning  { @apply border-amber-200   bg-amber-50; }
-}
-
-@layer components {
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
     }
