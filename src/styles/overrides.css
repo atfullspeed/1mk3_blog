@@ -1,0 +1,21 @@
+/* 記事本文 (.prose) の見出しと段落のマージンを整理する */
+@layer components {
+  /* 見出しの上下をそろえる。基本は上下対称 */
+  .prose :is(h1,h2,h3,h4){
+    margin-top: 1.25em;   /* 上 */
+    margin-bottom: 0.6em; /* 下 */
+  }
+  /* 記事の先頭に来た見出しは上マージンを削って詰める */
+  .prose :is(h1,h2,h3,h4):first-child {
+    margin-top: 2em;
+  }
+  /* 連続する見出し（h2の直後にh3など）は少しだけ詰める */
+  .prose :is(h1,h2,h3,h4) + :is(h1,h2,h3,h4) {
+    margin-top: 0.5em;
+  }
+  /* 見出しの前を作る役目は「前の要素の下マージン」に一本化 */
+  .prose :is(p,ul,ol,blockquote,pre,table){
+    margin-top: 0;
+    margin-bottom: 1.1em;   /* お好みで 0.9〜1.2em */
+  }
+}
