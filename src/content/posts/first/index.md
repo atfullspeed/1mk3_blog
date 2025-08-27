@@ -63,22 +63,27 @@ print("コピーボタンあるとか最高すぎる")
 すごいですねコレ
 :::
 
-<!-- 左：マゼンタ -->
-<div class="chat">
-  <div class="bubble bubble-right bubble-magenta">
-    <div class="bubble-body">
-    マゼンタ
-    吹き出しを作ってみました
-    </div>
-  </div>
+
+<div class="w-64 h-32
+            bg-white text-zinc-900 dark:bg-zinc-800 dark:text-zinc-50
+            flex items-center justify-center p-4 text-center"
+     style="
+       -webkit-mask: url('/1mk3_blog/chat/bubble-mask.png') no-repeat center / contain;
+       mask: url('/1mk3_blog/chat/bubble-mask.png') no-repeat center / contain;
+     ">
+  ……セリフがここに入る
 </div>
 
-<!-- 右：青（必ず .bubble に bubble-blue を付ける） -->
-<div class="chat chat-right">
-  <div class="bubble bubble-left bubble-blue">
-    <div class="bubble-body">
-    ブルー
-    うまく言ってると良いのですが
-    </div>
-  </div>
+<div class="w-64 h-32
+            bg-white text-zinc-900 dark:bg-zinc-800 dark:text-zinc-50
+            flex items-center justify-center p-4 text-center
+            [transform:scaleX(-1)]"
+     style="
+       -webkit-mask: url('/<repo>/chat/bubble-mask.png') no-repeat center / contain;
+       mask: url('/<repo>/chat/bubble-mask.png') no-repeat center / contain;
+     ">
+  <span style="transform:scaleX(-1); display:inline-block;">
+    ……セリフ（文字は反転させない）
+  </span>
 </div>
+

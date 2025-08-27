@@ -16,50 +16,6 @@
   }
 }
 
-/* ===== 1) カラートークン：ライト/ダーク両対応 ===== */
-/* まずライトを既定にする */
-:root{
-  --bubble-fg: #111827;             /* 文字色（light） */
-  --bubble-bg: #ffffff;             /* 背景（light） */
-  --bubble-shadow: 0 1px 2px rgb(0 0 0 / 0.06);
-  --bubble-accent: #9ca3af;         /* 既定枠色（gray-400） */
-
-  /* バリエーション */
-  --bubble-accent-magenta: #e11d48; /* rose-600: 暗所でも負けない発色 */
-  --bubble-accent-blue:    #3b82f6; /* blue-500: 暗所で灰に見えにくい */
-}
-
-/* ダークは「.dark クラス」で上書き（テーマのトグルに追従） */
-html.dark{
-  --bubble-fg: #e5e7eb;             /* 文字色（dark） */
-  --bubble-bg: #0b1220;             /* 背景（dark） */
-  --bubble-shadow: 0 1px 2px rgb(0 0 0 / 0.35);
-  --bubble-accent: #6b7280;         /* 既定枠色（gray-500） */
-}
-
-/* さらに、.dark クラスが無い環境でもOS設定に追従（保険） */
-@media (prefers-color-scheme: dark){
-  /* .dark が付いている時はそっち優先なので、この行で打ち消さない */
-  html:not(.dark){
-    --bubble-fg: #e5e7eb;
-    --bubble-bg: #0b1220;
-    --bubble-shadow: 0 1px 2px rgb(0 0 0 / 0.35);
-    --bubble-accent: #6b7280;
-  }
-}
-
-/* ===== 2) バブル色の切替（このクラスを .bubble に付ける） ===== */
-@layer components{
-  .prose .bubble-magenta{ --bubble-accent: var(--bubble-accent-magenta); }
-  .prose .bubble-blue   { --bubble-accent: var(--bubble-accent-blue);    }
-
-  /* 枠の発色が沈む時はわずかにグローを付けて視認性を上げる（任意） */
-  .prose .bubble-magenta,
-  .prose .bubble-blue{
-    box-shadow: var(--bubble-shadow), 0 0 0 1px color-mix(in oklab, var(--bubble-accent) 35%, transparent);
-  }
-}
-
 @layer components {
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
