@@ -63,27 +63,3 @@ print("コピーボタンあるとか最高すぎる")
 すごいですねコレ
 :::
 
-
-<div class="w-64 h-32
-            bg-white text-zinc-900 dark:bg-zinc-800 dark:text-zinc-50
-            flex items-center justify-center p-4 text-center"
-     style="
-       -webkit-mask: url('/1mk3_blog/chat/bubble-mask.png') no-repeat center / contain;
-       mask: url('/1mk3_blog/chat/bubble-mask.png') no-repeat center / contain;
-     ">
-  ……セリフがここに入る
-</div>
-
-<div class="w-64 h-32
-            bg-white text-zinc-900 dark:bg-zinc-800 dark:text-zinc-50
-            flex items-center justify-center p-4 text-center
-            [transform:scaleX(-1)]"
-     style="
-       -webkit-mask: url('/<repo>/chat/bubble-mask.png') no-repeat center / contain;
-       mask: url('/<repo>/chat/bubble-mask.png') no-repeat center / contain;
-     ">
-  <span style="transform:scaleX(-1); display:inline-block;">
-    ……セリフ（文字は反転させない）
-  </span>
-</div>
-
