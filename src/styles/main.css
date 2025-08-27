@@ -1,31 +1,6 @@
 @tailwind components;
 
 @layer components {
-  /* 箱そのものをちゃんとしたコンテナにする */
-  .prose blockquote.admonition{
-    @apply relative flow-root rounded-lg border border-gray-200 bg-gray-50 p-4 md:p-5;
-    /* タイトル帯が重なるテーマ向け。足りなければ数値を上げる */
-    padding-top: 1.75rem;
-    margin-left: 0;   /* デフォの引用インデントを打ち消す */
-    margin-right: 0;
-  }
-
-  /* 箱の内側の上下マージンを整える（最初だけ上ゼロ、最後だけ下ゼロ） */
-  .prose blockquote.admonition > :first-child { margin-top: 0; }
-  .prose blockquote.admonition > :last-child  { margin-bottom: 0; }
-
-  /* 連続見出しなどが来る場合の軽い余白 */
-  .prose blockquote.admonition > :is(h1,h2,h3,h4) + :is(p,ul,ol,pre,blockquote,table){
-    margin-top: .25rem;
-  }
-
-  /* 種別ごとの色分けをしたいなら任意で */
-  .prose blockquote.admonition.bdm-note     { @apply border-sky-200 bg-sky-50; }
-  .prose blockquote.admonition.bdm-warning  { @apply border-amber-200 bg-amber-50; }
-  .prose blockquote.admonition.bdm-important{ @apply border-fuchsia-200 bg-fuchsia-50; }
-}
-
-@layer components {
   /* 見出し・段落のマージン調整（前に教えたやつを貼る） */
   .prose :is(h1,h2,h3,h4){ margin-top:1.25em; margin-bottom:0.6em; }
   .prose :is(h1,h2,h3,h4):first-child{ margin-top:2em; }
@@ -34,6 +9,25 @@
     margin-top:0; margin-bottom:1.1em;
     }
 }
+
+@layer components {
+  /* コールアウトの箱を広くとって、最初の p がタイトルに食い込まないようにする */
+  .prose :where(.note,.tip,.info,.warning,.caution,.important,.admonition,.callout){
+    @apply relative flow-root rounded-lg border border-gray-200 bg-gray-50 p-4 md:p-5;
+  }
+  /* タイトル帯を重ねているテーマ向けに、上だけ少し余裕を増やす */
+  .prose :where(.note,.tip,.info,.warning,.caution,.important,.admonition,.callout){
+    padding-top: 1.75rem; /* タイトルが被るなら 2rem まで上げろ */
+  }
+  /* 箱の最初と最後は余白を相殺して詰める。本文がのっぺりしない程度で十分 */
+  .prose :where(.note,.tip,.info,.warning,.caution,.important,.admonition,.callout) > :first-child { margin-top: 0; }
+  .prose :where(.note,.tip,.info,.warning,.caution,.important,.admonition,.callout) > :last-child  { margin-bottom: 0; }
+  /* details/summary で実装されているパターンへの保険 */
+  .prose details:where(.note,.tip,.info,.warning,.caution,.important,.admonition,.callout) > summary{
+    @apply font-semibold mb-2;
+  }
+}
+
 
 @layer components {
     .card-base {
