@@ -40,15 +40,4 @@ print("コピーボタンあるとか最高すぎる")
 ```
 
 ## 画像だって表示できる
-<figure class="my-6">
-  <img
-    src="./cover.png"
-    alt="メインビジュアル"
-    width="600" height="315"
-    loading="lazy" decoding="async"
-    class="mx-auto rounded-xl"
-  />
-  <figcaption class="text-sm text-muted-foreground mt-2 text-center">
-    コイツが居過ぎて最早しつこいですね
-  </figcaption>
-</figure>
+![メインビジュアル](./cover.png "コイツが居過ぎて最早しつこいですね")
