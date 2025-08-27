@@ -70,6 +70,10 @@ const bannerOffsetByPosition = {
 };
 const bannerOffset =
 	bannerOffsetByPosition[siteConfig.banner.position || "center"];
+
+const fm = Astro.props?.frontmatter ?? {};
+const NOINDEX_SITE = true;
+
 ---
 
 <!DOCTYPE html>
@@ -146,6 +150,14 @@ const bannerOffset =
 		<slot name="head"></slot>
 
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
+
+	  {NOINDEX && (
+    <>
+      <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+      <meta name="googlebot" content="noindex, nofollow, noimageindex, max-snippet:0, max-image-preview:none" />
+      <meta name="bingbot" content="noindex, nofollow" />
+    </>
+  )}
 
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
