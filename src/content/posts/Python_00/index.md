@@ -24,14 +24,14 @@ draft: false
 2. 表示して遊ぼう！［print()］
 3. 変数と基本データ型［int, str, bool］
 4. 【閑話休題】エラーは怖くない！
-5. データ構造を知ろう［list, dict, tuple, set］
+5. データ型を知ろう［list, dict, tuple, set］
 6. インデックスとキーの扱い方［listとdict］
 7. 【閑話休題】変数名、どう付ける？
 8. 条件分岐の話［if, elif, else］
-9. 演算子のいろいろ［==, !=, and, or など］
+9. 個性豊かな演算子［==, !=, and, or など］
 10. ループ処理の話［for・while］
 11. 【閑話休題】GUIとCUI
-12. 関数って何だろう［def, 引数, return］
+12. 関数って何？［def, 引数, return］
 13. 【閑話休題】順次・分岐・反復の考え方
 14. よく使う便利な関数［len(), str(), type() など］
 
@@ -47,6 +47,4 @@ draft: false
 
 # Link
 
-`目次` [**#0 カテゴリ紹介［Python学習大作戦］**](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)  
-  
 `次回` **#1 Pythonについて**（未執筆）
