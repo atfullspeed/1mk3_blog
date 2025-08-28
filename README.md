@@ -25,6 +25,6 @@ pnpm build # dist/ を生成
 
 ##  ライセンスとクレジット
 
-コード: MIT
-コンテンツ（記事・画像）: All rights reserved
+コード: MIT  
+コンテンツ（記事・画像）: All rights reserved  
 テーマ: fuwari（MIT） https://github.com/saicaca/fuwari
