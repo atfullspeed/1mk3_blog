@@ -46,4 +46,4 @@ draft: false
 
 # Link
 
-`次回` **#1 Pythonについて**
+`次回` **#1 Pythonについて**（未公開）
