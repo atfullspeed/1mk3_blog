@@ -142,10 +142,6 @@ const NOINDEX = NOINDEX_SITE || fm.noindex === true;
 			offset = offset - offset % 4;
 			document.documentElement.style.setProperty('--banner-height-extend', `${offset}px`);
 		</script>
-		<script>
-		// ページ読込時に強制リセット
-		localStorage.removeItem('theme-hue');
-		</script>
 
 		<style define:vars={{
 			configHue,
