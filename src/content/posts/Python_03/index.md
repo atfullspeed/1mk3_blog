@@ -9,6 +9,6 @@ draft: true
 
 # Link
 
-- ［目次］[**#0 はじめに**](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)  
-- ［前回］**#2 表示して遊ぼう！［print()］**  
-- ［次回］`未執筆`（**#4 【閑話休題】エラーは怖くない！**）  
+- `目次` [**#0 はじめに**](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)  
+- `前回` **#2 表示して遊ぼう！［print()］**  
+- `次回` **#4 【閑話休題】エラーは怖くない！**（未執筆）

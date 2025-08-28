@@ -13,7 +13,7 @@ draft: false
 この度、新たに`Python学習大作戦`というカテゴリを作りました。  
   
 内容としてはド初心者の学習記録となっています。  
-絵が描けるため「オリジナルのキャラを登場させて絵を挟みつつ進めよう」と書き進めていく予定です。  
+絵が描けることを利用して、オリジナルのキャラ絵を挟みつつ書き進めていく予定です。  
 
 
 # 目次
@@ -48,5 +48,5 @@ draft: false
 
 # Link
 
-- ［目次］[**#0 はじめに**](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)  
-- ［次回］`未執筆`（**#1 Pythonについて**）  
+- `目次` [**#0 はじめに**](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)  
+- `次回` **#1 Pythonについて**
