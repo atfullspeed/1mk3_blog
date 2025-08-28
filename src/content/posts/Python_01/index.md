@@ -7,6 +7,7 @@ category: Python学習大作戦
 draft: true
 ---
 
-
-## 前回：[`#0 はじめに`](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)
-## 次回：`#2 表示して遊ぼう！［print()］`（未執筆）
+# Link
+### 目次：[#0 はじめに](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)
+## 前回：[#0 はじめに](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)
+## 次回：#2 表示して遊ぼう！［print()］（未執筆）
