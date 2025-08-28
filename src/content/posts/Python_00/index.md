@@ -3,7 +3,7 @@ title: "#0 はじめに"
 published: 2025-08-28
 description: カテゴリ始動の話です
 image: "./cover.png"
-tags: [告知, Python, 光陰組]
+tags: [Python, 光陰組, 告知]
 category: Python学習大作戦
 draft: false
 ---
