@@ -44,8 +44,9 @@ draft: false
   
 移行とか言ってますが、前の記事はそのまま使わずに最初から書き直します。  
 もちろん銀髪の双子っぽいキャラ（光陰組）は健在ですし、それはもう頻繁に登場します。  
-  
+
+
 # Link
-目次：[**#0 はじめに**](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)  
-前回：-  
-次回：`未執筆`**#1 Pythonについて**  
+
+- ［目次］[**#0 はじめに**](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)  
+- ［次回］`未執筆`（**#1 Pythonについて**）  
