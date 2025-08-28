@@ -1,6 +1,6 @@
 ---
 title: 初投稿記念
-published: 2025-08-28
+published: 2025-08-27
 description: 名の通りです
 image: "./cover.png"
 tags: [告知]
@@ -45,7 +45,7 @@ draft: false
 > とにかく引用が好きすぎるので  
 > 使いすぎないように気をつけたいです  
 
-```python
+```
 print("コードが書けるのは超助かりますね")
 print("コピーボタンあるとか最高すぎる")
 ```
