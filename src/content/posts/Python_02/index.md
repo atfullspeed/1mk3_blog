@@ -10,7 +10,7 @@ draft: true
 # Link
 
 `目次` [**#0 カテゴリ紹介［Python学習大作戦］**](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)  
-  
+
 `前回` [**#1 Pythonについて**](https://atfullspeed.github.io/1mk3_blog/posts/python_01/)  
-  
+
 `次回` **#3 変数と基本データ型［int, str, bool］**（未執筆）  
