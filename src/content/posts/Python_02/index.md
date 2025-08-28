@@ -10,5 +10,7 @@ draft: true
 # Link
 
 `目次` [**#0 はじめに**](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)  
+  
 `前回` **#1 Pythonについて**  
+  
 `次回` **#3 変数と基本データ型［int, str, bool］**（未執筆）  

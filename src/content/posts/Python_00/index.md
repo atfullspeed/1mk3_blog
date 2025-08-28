@@ -49,4 +49,5 @@ draft: false
 # Link
 
 `目次` [**#0 はじめに**](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)  
+  
 `次回` **#1 Pythonについて**（未執筆）
