@@ -20,21 +20,21 @@ draft: false
 
 **※記事が完成・公開でき次第リンク化します。**  
   
-#### [#0 はじめに](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)
-#### #1 Pythonについて
-#### #2 表示して遊ぼう！［print()］
-#### #3 変数と基本データ型［int, str, bool］
-#### #4 【閑話休題】エラーは怖くない！
-#### #5 データ構造を知ろう［list, dict, tuple, set］
-#### #6 インデックスとキーの扱い方［listとdict］
-#### #7 【閑話休題】変数名、どう付ける？
-#### #8 条件分岐の話［if, elif, else］
-#### #9 演算子のいろいろ［==, !=, and, or など］
-#### #10 ループ処理の話［for・while］
-#### #11 【閑話休題】GUIとCUI
-#### #12 関数って何だろう［def, 引数, return］
-#### #13【閑話休題】順次・分岐・反復の考え方
-#### #14 よく使う便利な関数［len(), str(), type() など］
+0. [はじめに](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)
+1. Pythonについて
+2. 表示して遊ぼう！［print()］
+3. 変数と基本データ型［int, str, bool］
+4. 【閑話休題】エラーは怖くない！
+5. データ構造を知ろう［list, dict, tuple, set］
+6. インデックスとキーの扱い方［listとdict］
+7. 【閑話休題】変数名、どう付ける？
+8. 条件分岐の話［if, elif, else］
+9. 演算子のいろいろ［==, !=, and, or など］
+10. ループ処理の話［for・while］
+11. 【閑話休題】GUIとCUI
+12. 関数って何だろう［def, 引数, return］
+13. 【閑話休題】順次・分岐・反復の考え方
+14. よく使う便利な関数［len(), str(), type() など］
 
 
 # 前の記事は？
@@ -46,6 +46,6 @@ draft: false
 もちろん銀髪の双子っぽいキャラ（光陰組）は健在ですし、それはもう頻繁に登場します。  
   
 # Link
-### 目次：[#0 はじめに](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)
-### 前回：-
-### 次回：#1 Pythonについて（未執筆）
+目次：[**#0 はじめに**](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)  
+前回：-  
+次回：`未執筆`**#1 Pythonについて**  
