@@ -20,7 +20,7 @@ draft: false
 
 **※記事が完成・公開でき次第リンク化します。**  
   
-0. `[はじめに](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)`
+0. [`はじめに`](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)
 1. Pythonについて
 2. 表示して遊ぼう！［print()］
 3. 変数と基本データ型［int, str, bool］
@@ -47,4 +47,4 @@ draft: false
   
 
 ## 前回：-
-## 次回：Pythonについて（未執筆）
+## 次回：`#1 Pythonについて`（未執筆）
