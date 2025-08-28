@@ -1,7 +1,7 @@
 ---
-title: "#0 はじめに"
-published: 2025-08-28
-description: カテゴリ始動の話です
+title: "#0 カテゴリ紹介［Python学習大作戦］"
+published: 2025-09-02
+description: Pythonカテゴリ始動の話です
 tags: [Python, 光陰組, 告知]
 category: Python学習大作戦
 draft: false
@@ -19,7 +19,7 @@ draft: false
 
 **※記事が完成・公開でき次第リンク化予定**  
   
-0. [はじめに](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)
+0. [カテゴリ紹介［Python学習大作戦］](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)
 1. Pythonについて
 2. 表示して遊ぼう！［print()］
 3. 変数と基本データ型［int, str, bool］
@@ -47,6 +47,6 @@ draft: false
 
 # Link
 
-`目次` [**#0 はじめに**](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)  
+`目次` [**#0 カテゴリ紹介［Python学習大作戦］**](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)  
   
 `次回` **#1 Pythonについて**（未執筆）
