@@ -1,9 +1,9 @@
 ---
-title: "#0 ド素人によるPython学習大作戦"
+title: "#0 はじめに"
 published: 2025-08-28
-description: 新カテゴリ始動ってだけです
+description: 新カテゴリ始動って話です
 image: "./cover.png"
-tags: [Python, 光陰組]
+tags: [告知, Python, 光陰組]
 category: Python学習大作戦
 draft: false
 ---
