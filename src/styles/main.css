@@ -11,10 +11,6 @@
 }
 
 @layer components {
-  :root { --theme-hue: 220 !important; } /* ← お前の狙いの色相に合わせろ */
-}
-
-@layer components {
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
     }
