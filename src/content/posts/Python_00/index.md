@@ -20,7 +20,7 @@ draft: false
 **※記事が完成・公開でき次第リンク化予定**  
   
 0. [カテゴリ紹介［Python学習大作戦］](https://atfullspeed.github.io/1mk3_blog/posts/python_00/)
-1. Pythonについて
+1. [Pythonについて](https://atfullspeed.github.io/1mk3_blog/posts/python_01/)
 2. 表示して遊ぼう！［print()］
 3. 変数と基本データ型［int, str, bool］
 4. 【閑話休題】エラーは怖くない！
@@ -41,10 +41,9 @@ draft: false
 実は以前、別所で同じような記事まとめを限定公開していたのですが……  
 画像を盛りまくり好き勝手やっていくのに罪悪感を覚え、移行することにして今に至ります。  
   
-移行とか言ってますが、前の記事はそのまま使わずに最初から書き直します。  
 もちろん銀髪の双子っぽいキャラ（光陰組）は健在ですし、それはもう頻繁に登場します。  
 
 
 # Link
 
-`次回` **#1 Pythonについて**（未執筆）
+`次回` [**#1 Pythonについて**](https://atfullspeed.github.io/1mk3_blog/posts/python_01/)
